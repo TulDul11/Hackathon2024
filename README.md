@@ -96,6 +96,7 @@ Antes de ejecutar la aplicación, asegúrate de que tienes instaladas las siguie
    Esto indica que el servidor Flask está en funcionamiento y que la aplicación está accesible en `localhost`.
 
 ### 2. Abrir en el navegador
+Nota: El url depende del app.py para que funcione, revisa el url antes de continuar.
 
    Abre tu navegador web favorito y ve a la siguiente URL:
 
