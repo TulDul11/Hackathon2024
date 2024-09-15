@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background: #d6cfc1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo-contianer {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+#contadorSection h2 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+#contador {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+#videoPlaceholder {
+    height: 300px;
+    width: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #555;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: center;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+#video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.controller {
+    text-align: center;
+    margin-top: 10px;
+}

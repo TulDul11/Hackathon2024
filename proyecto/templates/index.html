@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Objetos - CarfieldCV</title>
+    <link rel ="icon" href="/static/favicon.ico">
+    
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class ="header">
+            <div class = "logo-container">
+                <img src = "/static/logo.png" alt="Logo del programa" class = "logo">
+            </div>
+            <h1>Carfield: Carrito inteligente </h1>
+        </div>
+
+        <!-- Sección para mostrar el conteo de objetos -->
+        <div id="contadorSection">
+            <h3>Objetos Detectados: <span id="contador">0</span></h3>
+        </div>
+
+        <!-- Video para mostrar el stream de la cámara -->
+        <div id="video-Wrap">
+            <video id="video" playsinline autoplay></video>
+        </div>
+        <footer>
+            <p>Este proyecto tiene como proposito mejorar la experiencia de compra en supermercados 
+                utilizando vision computarizada para detectar objetos automaticamente. </p>
+        </footer>
+    </div>
+
+    
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+    
+
+    <script src="/static/app.js">
+    </script>
+</body>
+</html>
+
