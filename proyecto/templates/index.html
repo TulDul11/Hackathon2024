@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de Objetos - CarfieldCV</title>
-    <link rel ="icon" href="/static/favicon.ico">
-    
+    <link rel="icon" href="/static/favicon.ico">
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
-
-        <div class ="header">
-            <div class = "logo-container">
-                <img src = "/static/logo.png" alt="Logo del programa" class = "logo">
+        <div class="header">
+            <div class="logo-container">
+                <img src="/static/logo.png" alt="Logo del programa" class="logo">
             </div>
-            <h1>Carfield: Carrito inteligente </h1>
+            <h1>Carfield: Carrito inteligente</h1>
         </div>
 
         <!-- Sección para mostrar el conteo de objetos -->
@@ -25,21 +23,29 @@
 
         <!-- Video para mostrar el stream de la cámara -->
         <div id="video-Wrap">
-            <video id="video" playsinline autoplay></video>
+            <img id="video-stream" src="/video_feed" alt="Stream de la cámara en vivo">
         </div>
+
         <footer>
-            <p>Este proyecto tiene como proposito mejorar la experiencia de compra en supermercados 
-                utilizando vision computarizada para detectar objetos automaticamente. </p>
+            <p>Este proyecto tiene como propósito mejorar la experiencia de compra en supermercados utilizando visión computarizada para detectar objetos automáticamente.</p>
         </footer>
     </div>
 
-    
     <canvas id="canvas" width="640" height="480"></canvas>
 
-    
+    <script>
+        // Función para actualizar el objeto detectado
+        function actualizarDeteccion() {
+            fetch('/get_object_count')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('contador').innerText = data.count;
+                })
+                .catch(error => console.error('Error en la detección:', error));
+        }
 
-    <script src="/static/app.js">
+        // Llamar a la función de detección cada 2 segundos
+        setInterval(actualizarDeteccion, 2000);
     </script>
 </body>
 </html>
-
